@@ -1,5 +1,6 @@
 @import "normalize";
 @import "variables";
+@import "breakpoints";
 
 /* General Styles*/
 html {
@@ -47,15 +48,31 @@ p {
     background: $lt_color_pattern;
     border-radius: 0 0 2rem 2rem;
 
+    @include laptop {
+        padding-bottom: $separacion * 3;
+    }
+
     p {
         color: $lt_textColor_secondary;
         font-weight: $font_bold;
         font-size: 1.4rem;
     }
+
+    .header__container {
+        @include laptop {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
 }
 
 .header__copy {
     border-bottom: 1px solid $dt_textColor_secondary;
+
+    @include laptop {
+        border-bottom: 0;
+    }
     padding-bottom: $separacion/2.5;
 
     h1 {
@@ -73,6 +90,12 @@ p {
     justify-content: space-between;
     align-items: center;
     margin-top: $separacion/4;
+
+    @include laptop {
+        p {
+            margin-right: 2rem;
+        }
+    }
 }
 
 .toggle {
@@ -98,6 +121,18 @@ p {
 
 .main {
     margin-top: -5rem;
+
+    @include laptop {
+        margin-top: -10rem;
+    }
+}
+
+.section_one {
+    @include laptop {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: $separacion/2;
+    }
 }
 
 .card {
@@ -203,6 +238,12 @@ p {
 
 .cards {
     margin-top: $separacion/2;
+
+    @include laptop {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: $separacion/2;
+    }
 }
 
 .cards__card {
@@ -210,6 +251,10 @@ p {
     padding: $separacion/2;
     border-radius: 1rem;
     margin: $separacion/4 0;
+
+    @include laptop {
+        margin: 0;
+    }
 }
 
 .cards__header,
