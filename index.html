@@ -15,22 +15,25 @@
     </head>
 
     <body>
-        <header>
-            <div>
-                <h1>Social Media Dashboard</h1>
-                <p>Total Followers: 23,004</p>
-            </div>
-            <div>
-                <p>Dark Mode</p>
-                <button></button>
+        <header class="header">
+            <div class="container">
+                <div class="header__copy">
+                    <h1>Social Media Dashboard</h1>
+                    <p>Total Followers: 23,004</p>
+                </div>
+                <div class="header__switch">
+                    <p>Dark Mode</p>
+                    <button class="toggle"></button>
+                </div>
             </div>
         </header>
 
-        <main>
+        <main class="main">
             <!-- First Section -->
-            <div>
+            <div class="container">
                 <!-- Card Facebook -->
                 <div class="card card--facebook">
+                    <div class="bar"></div>
                     <div class="card__header">
                         <img
                             src="images/icon-facebook.svg"
@@ -52,6 +55,7 @@
 
                 <!-- Card Twitter -->
                 <div class="card card--twitter">
+                    <div class="bar"></div>
                     <div class="card__header">
                         <img src="images/icon-twitter.svg" alt="icon twitter" />
                         <span>@nathanf</span>
@@ -70,6 +74,7 @@
 
                 <!-- Card Instagram -->
                 <div class="card card--instagram">
+                    <div class="bar"></div>
                     <div class="card__header">
                         <img
                             src="images/icon-instagram.svg"
@@ -91,6 +96,7 @@
 
                 <!-- Card Youtube -->
                 <div class="card card--youtube">
+                    <div class="bar"></div>
                     <div class="card__header">
                         <img src="images/icon-youtube.svg" alt="icon youtube" />
                         <span>Nathan F.</span>
@@ -102,11 +108,169 @@
                     <div class="card__footer">
                         <p>
                             <img src="images/icon-down.svg" alt="icon down" />
-                            <span>144 Today</span>
+                            <span class="text-red">144 Today</span>
                         </p>
                     </div>
                 </div>
             </div>
+
+            <section class="container section">
+                <h2>Overview - Today</h2>
+                <div class="cards">
+                    <!-- Card 1 -->
+                    <div class="cards__card">
+                        <div class="cards__header">
+                            <p>Page Views</p>
+                            <img
+                                src="images/icon-facebook.svg"
+                                alt="icon facebook"
+                            />
+                        </div>
+                        <div class="cards__footer">
+                            <p>87</p>
+                            <p>
+                                <img src="images/icon-up.svg" alt="icon up" />
+                                <span class="text-green">3%</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="cards__card">
+                        <div class="cards__header">
+                            <p>Likes</p>
+                            <img
+                                src="images/icon-facebook.svg"
+                                alt="icon facebook"
+                            />
+                        </div>
+                        <div class="cards__footer">
+                            <p>52</p>
+                            <p>
+                                <img
+                                    src="images/icon-down.svg"
+                                    alt="icon icon-down"
+                                />
+                                <span class="text-red">2%</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="cards__card">
+                        <div class="cards__header">
+                            <p>Likes</p>
+                            <img
+                                src="images/icon-instagram.svg"
+                                alt="icon instagram"
+                            />
+                        </div>
+                        <div class="cards__footer">
+                            <p>5462</p>
+                            <p>
+                                <img src="images/icon-up.svg" alt="icon up" />
+                                <span class="text-green">2257%</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="cards__card">
+                        <div class="cards__header">
+                            <p>Profile Views</p>
+                            <img
+                                src="images/icon-instagram.svg"
+                                alt="icon instagram"
+                            />
+                        </div>
+                        <div class="cards__footer">
+                            <p>52k</p>
+                            <p>
+                                <img src="images/icon-up.svg" alt="icon up" />
+                                <span class="text-green">1375%</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="cards__card">
+                        <div class="cards__header">
+                            <p>Retweets</p>
+                            <img
+                                src="images/icon-twitter.svg"
+                                alt="icon twitter"
+                            />
+                        </div>
+                        <div class="cards__footer">
+                            <p>117</p>
+                            <p>
+                                <img src="images/icon-up.svg" alt="icon up" />
+                                <span class="text-green">303%</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="cards__card">
+                        <div class="cards__header">
+                            <p>Likes</p>
+                            <img
+                                src="images/icon-twitter.svg"
+                                alt="icon twitter"
+                            />
+                        </div>
+                        <div class="cards__footer">
+                            <p>507</p>
+                            <p>
+                                <img src="images/icon-up.svg" alt="icon up" />
+                                <span class="text-green">553%</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 7 -->
+                    <div class="cards__card">
+                        <div class="cards__header">
+                            <p>Likes</p>
+                            <img
+                                src="images/icon-youtube.svg"
+                                alt="icon youtube"
+                            />
+                        </div>
+                        <div class="cards__footer">
+                            <p>107</p>
+                            <p>
+                                <img
+                                    src="images/icon-down.svg"
+                                    alt="icon down"
+                                />
+                                <span class="text-red">19%</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 8 -->
+                    <div class="cards__card">
+                        <div class="cards__header">
+                            <p>Total Views</p>
+                            <img
+                                src="images/icon-youtube.svg"
+                                alt="icon youtube"
+                            />
+                        </div>
+                        <div class="cards__footer">
+                            <p>1407</p>
+                            <p>
+                                <img
+                                    src="images/icon-down.svg"
+                                    alt="icon down"
+                                />
+                                <span class="text-red">12%</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
         <!--Overview -
         Today Page Views 87 3% Likes 52 2% Likes 5462 2257% Profile Views 52k
