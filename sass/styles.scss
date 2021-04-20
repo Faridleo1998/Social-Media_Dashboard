@@ -1,2 +1,239 @@
 @import "normalize";
 @import "variables";
+
+/* General Styles*/
+html {
+    box-sizing: border-box;
+    /*1rem => 10px*/
+    font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: $font;
+    font-size: 1.4rem;
+    background-color: $lt_bgColor_body;
+    color: $lt_textColor_secondary;
+}
+
+h1,
+h2,
+p {
+    margin: 0;
+}
+
+.text-green {
+    color: $color_primary;
+}
+
+.text-red {
+    color: $color_secondary;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Custom Styles*/
+.header {
+    padding: $separacion 0 $separacion * 2;
+    background: $lt_color_pattern;
+    border-radius: 0 0 2rem 2rem;
+
+    p {
+        color: $lt_textColor_secondary;
+        font-weight: $font_bold;
+        font-size: 1.4rem;
+    }
+}
+
+.header__copy {
+    border-bottom: 1px solid $dt_textColor_secondary;
+    padding-bottom: $separacion/2.5;
+
+    h1 {
+        font-size: 2.5rem;
+        color: $lt_textColor_primary;
+    }
+
+    p {
+        margin-top: $separacion/5;
+    }
+}
+
+.header__switch {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: $separacion/4;
+}
+
+.toggle {
+    background: $lt_bgColor_toggle;
+    border: 0;
+    width: 60px;
+    height: 28px;
+    border-radius: 2rem;
+    position: relative;
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        background: $lt_color_pattern;
+        top: 0.3rem;
+        right: 0.4rem;
+    }
+}
+
+.main {
+    margin-top: -5rem;
+}
+
+.card {
+    background: $lt_bgColor_card;
+    text-align: center;
+    padding: $separacion/1.5 0;
+    margin-bottom: $separacion/2;
+    border-radius: 1rem;
+    position: relative;
+
+    .bar {
+        width: 100%;
+        height: 5px;
+        position: absolute;
+        top: 0;
+        border-radius: 5rem 5rem 0 0;
+    }
+}
+
+.card__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: $separacion/4;
+
+    span {
+        font-size: 1.4rem;
+        font-weight: $font_bold;
+        color: $lt_textColor_secondary;
+        margin-left: 1rem;
+    }
+}
+
+.card__copy {
+    margin-top: $separacion/2.5;
+
+    p:first-child {
+        font-weight: $font_bold;
+        color: $lt_textColor_primary;
+        font-size: 6rem;
+    }
+
+    p:last-child {
+        color: $lt_textColor_secondary;
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        letter-spacing: 0.6rem;
+        margin-top: 0.5rem;
+    }
+}
+
+.card__footer {
+    margin-top: $separacion/2;
+
+    p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+    span {
+        color: $color_primary;
+        font-size: 1.4rem;
+        font-weight: $font_bold;
+        margin-left: 0.3rem;
+    }
+
+    span.text-red {
+        color: $color_secondary;
+    }
+}
+
+.card--facebook {
+    .bar {
+        background: $color_facebook;
+    }
+}
+
+.card--twitter {
+    .bar {
+        background: $color_twitter;
+    }
+}
+
+.card--instagram {
+    .bar {
+        background: $color_instagram;
+    }
+}
+
+.card--youtube {
+    .bar {
+        background: $color_youtube;
+    }
+}
+
+.section {
+    padding: $separacion/2 0;
+    h2 {
+        font-size: 2.7rem;
+    }
+}
+
+.cards {
+    margin-top: $separacion/2;
+}
+
+.cards__card {
+    background: $lt_bgColor_card;
+    padding: $separacion/2;
+    border-radius: 1rem;
+    margin: $separacion/4 0;
+}
+
+.cards__header,
+.cards__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: $font_bold;
+}
+
+.cards__footer {
+    margin-top: $separacion/2;
+    align-items: flex-end;
+    p:first-child {
+        color: $lt_textColor_primary;
+        font-size: 3rem;
+    }
+
+    p:last-child {
+        display: flex;
+        align-items: center;
+
+        span {
+            margin-left: 0.3rem;
+        }
+    }
+}

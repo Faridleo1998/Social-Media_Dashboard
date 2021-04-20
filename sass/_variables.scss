@@ -3,7 +3,11 @@ $color_primary: hsl(163, 72%, 41%);
 $color_secondary: hsl(356, 69%, 56%);
 $color_facebook: hsl(208, 92%, 53%);
 $color_twitter: hsl(203, 89%, 53%);
-$color_instagram: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%);
+$color_instagram: linear-gradient(
+    90deg,
+    hsl(37, 97%, 70%) 0%,
+    hsl(329, 70%, 58%) 100%
+);
 $color_youtube: hsl(348, 97%, 39%);
 
 // Light Theme
@@ -27,3 +31,5 @@ $dt_textColor_secondary: hsl(228, 34%, 66%);
 $font: "Inter", sans-serif;
 $font_normal: 400;
 $font_bold: 700;
+
+$separacion: 5rem;
