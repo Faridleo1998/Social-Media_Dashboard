@@ -24,7 +24,6 @@ body {
 
     &.dark {
         background: $dt_bgColor_body;
-        color: $dt_textColor_secondary;
     }
 }
 
@@ -124,6 +123,10 @@ p {
     border-radius: 2rem;
     position: relative;
 
+    &:hover {
+        cursor: pointer;
+    }
+
     body.dark & {
         background: $dt_bgColor_toggle;
     }
@@ -138,7 +141,6 @@ p {
         background: $lt_color_pattern;
         top: 0.3rem;
         right: 0.4rem;
-        transition: all 0.3s ease-in-out;
     }
 
     body.dark &::after {
@@ -156,10 +158,14 @@ p {
 }
 
 .section_one {
-    @include laptop {
+    @include tablet {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: $separacion/2;
+    }
+
+    @include laptop {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
@@ -171,8 +177,17 @@ p {
     border-radius: 1rem;
     position: relative;
 
+    &:hover {
+        cursor: pointer;
+        filter: brightness(95%);
+    }
+
     body.dark & {
         background: $dt_bgColor_card;
+
+        &:hover {
+            filter: brightness(150%);
+        }
     }
 
     .bar {
@@ -287,10 +302,14 @@ p {
 .cards {
     margin-top: $separacion/2;
 
-    @include laptop {
+    @include tablet {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: $separacion/2;
+    }
+
+    @include laptop {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
@@ -300,11 +319,20 @@ p {
     border-radius: 1rem;
     margin: $separacion/4 0;
 
-    body.dark & {
-        background: $dt_bgColor_card;
+    &:hover {
+        cursor: pointer;
+        filter: brightness(95%);
     }
 
-    @include laptop {
+    body.dark & {
+        background: $dt_bgColor_card;
+
+        &:hover {
+            filter: brightness(150%);
+        }
+    }
+
+    @include tablet {
         margin: 0;
     }
 }
