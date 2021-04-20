@@ -13,6 +13,7 @@ html {
 *::before,
 *::after {
     box-sizing: inherit;
+    transition: all 0.3s ease-in-out;
 }
 
 body {
@@ -20,6 +21,11 @@ body {
     font-size: 1.4rem;
     background-color: $lt_bgColor_body;
     color: $lt_textColor_secondary;
+
+    &.dark {
+        background: $dt_bgColor_body;
+        color: $dt_textColor_secondary;
+    }
 }
 
 h1,
@@ -47,6 +53,14 @@ p {
     padding: $separacion 0 $separacion * 2;
     background: $lt_color_pattern;
     border-radius: 0 0 2rem 2rem;
+
+    body.dark & {
+        background: $dt_color_pattern;
+
+        p {
+            color: $dt_textColor_secondary;
+        }
+    }
 
     @include laptop {
         padding-bottom: $separacion * 3;
@@ -78,6 +92,10 @@ p {
     h1 {
         font-size: 2.5rem;
         color: $lt_textColor_primary;
+
+        body.dark & {
+            color: $dt_textColor_primary;
+        }
     }
 
     p {
@@ -106,6 +124,10 @@ p {
     border-radius: 2rem;
     position: relative;
 
+    body.dark & {
+        background: $dt_bgColor_toggle;
+    }
+
     &::after {
         content: "";
         display: block;
@@ -116,6 +138,12 @@ p {
         background: $lt_color_pattern;
         top: 0.3rem;
         right: 0.4rem;
+        transition: all 0.3s ease-in-out;
+    }
+
+    body.dark &::after {
+        background: $dt_color_pattern;
+        transform: translateX(-3rem);
     }
 }
 
@@ -143,6 +171,10 @@ p {
     border-radius: 1rem;
     position: relative;
 
+    body.dark & {
+        background: $dt_bgColor_card;
+    }
+
     .bar {
         width: 100%;
         height: 5px;
@@ -163,6 +195,10 @@ p {
         font-weight: $font_bold;
         color: $lt_textColor_secondary;
         margin-left: 1rem;
+
+        body.dark & {
+            color: $dt_textColor_secondary;
+        }
     }
 }
 
@@ -173,6 +209,10 @@ p {
         font-weight: $font_bold;
         color: $lt_textColor_primary;
         font-size: 6rem;
+
+        body.dark & {
+            color: $dt_textColor_primary;
+        }
     }
 
     p:last-child {
@@ -181,6 +221,10 @@ p {
         font-size: 1.4rem;
         letter-spacing: 0.6rem;
         margin-top: 0.5rem;
+
+        body.dark & {
+            color: $dt_textColor_secondary;
+        }
     }
 }
 
@@ -233,6 +277,10 @@ p {
     padding: $separacion/2 0;
     h2 {
         font-size: 2.7rem;
+
+        body.dark & {
+            color: $dt_textColor_primary;
+        }
     }
 }
 
@@ -252,6 +300,10 @@ p {
     border-radius: 1rem;
     margin: $separacion/4 0;
 
+    body.dark & {
+        background: $dt_bgColor_card;
+    }
+
     @include laptop {
         margin: 0;
     }
@@ -265,12 +317,24 @@ p {
     font-weight: $font_bold;
 }
 
+.cards__header {
+    p {
+        body.dark & {
+            color: $dt_textColor_secondary;
+        }
+    }
+}
+
 .cards__footer {
     margin-top: $separacion/2;
     align-items: flex-end;
     p:first-child {
         color: $lt_textColor_primary;
         font-size: 3rem;
+
+        body.dark & {
+            color: $dt_textColor_primary;
+        }
     }
 
     p:last-child {

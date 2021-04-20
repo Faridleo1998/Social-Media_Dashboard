@@ -19,7 +19,11 @@ $lt_textColor_primary: hsl(230, 17%, 14%);
 $lt_textColor_secondary: hsl(228, 12%, 44%);
 
 // Dark Theme
-$dt_bgColor_toggle: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
+$dt_bgColor_toggle: linear-gradient(
+    90deg,
+    hsl(210, 78%, 56%) 0%,
+    hsl(146, 68%, 55%) 100%
+);
 $dt_bgColor_body: hsl(230, 17%, 14%);
 $dt_color_pattern: hsl(232, 19%, 15%);
 $dt_bgColor_card: hsl(228, 28%, 20%);
