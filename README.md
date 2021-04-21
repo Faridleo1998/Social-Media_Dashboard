@@ -16,7 +16,7 @@ Sí deseas realizar este reto te invito a que descargues los archivos del proyec
 -   Aplicación de la metodología BEM (Block, Element, Modifier).
 -   Sitio con modo oscuro, el cuál responde al tema por defecto del sistema y a su vez almacena la elección del usuario.
 
-![](./images/performance.png)
+![](./images/performance.PNG)
 
 ## Despliegue 📦
 
