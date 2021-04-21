@@ -374,3 +374,22 @@ p {
         }
     }
 }
+
+footer {
+    text-align: center;
+
+    a {
+        text-decoration: none;
+        color: $lt_textColor_primary;
+        font-weight: $font_bold;
+
+        body.dark & {
+            color: $dt_textColor_secondary;
+        }
+    }
+
+    .attribution {
+        margin-top: $separacion/2;
+        color: $lt_textColor_secondary;
+    }
+}

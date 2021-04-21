@@ -561,4 +561,16 @@ body.dark .cards__header p {
     .cards__footer p:last-child span {
       margin-left: 0.3rem; }
 
+footer {
+  text-align: center; }
+  footer a {
+    text-decoration: none;
+    color: #1e202a;
+    font-weight: 700; }
+    body.dark footer a {
+      color: #8b97c6; }
+  footer .attribution {
+    margin-top: 2.5rem;
+    color: #63687e; }
+
 /*# sourceMappingURL=styles.css.map */
