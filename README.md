@@ -20,10 +20,9 @@ Sí deseas realizar este reto te invito a que descargues los archivos del proyec
 
 ## Despliegue 📦
 
-Te invito a conocer el sitio desplegado en las siguientes plataformas:
+Te invito a conocer el sitio desplegado en las siguiente plataforma:
 
--   Github Pages: Próximamente!
--   Netlify: Próximamente
+-   Github Pages: https://faridleo1998.github.io/Social-Media_Dashboard/
 
 ## Construido con 🛠️
 
@@ -54,6 +53,5 @@ Este sitio fue realizado por:
 ## Agradecimientos 🎁
 
 -   Gracias por visitar mi proyecto, es para mi un honor compartir y demostrar mis habilidades con otras personas.🤓
--   Puedes comentar que te ha parecido el proyecto o si tienes una sugerencia, el feedback es bienvenido.📢
 <!-- * Invita una cerveza 🍺 o un café ☕ a alguien del equipo.
 -   etc. -->
